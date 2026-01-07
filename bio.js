@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
     const form = document.getElementById("orderForm");
 
-    form.addEventListener("submit", function (e) {
+    form.addEventListener("submit", function(e) {
         e.preventDefault(); // cegah reload halaman
 
         const nama = document.getElementById("nama").value;
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
             "Jumlah: " + jumlah + "\n" +
             "Catatan: " + catatan;
 
-        const nomorWA = "6283896690924"; // ganti nomor WA kamu
+        const nomorWA = "6283896690924"; // ganti dengan nomor WhatsApp kamu
         const url = "https://wa.me/" + nomorWA + "?text=" + encodeURIComponent(pesan);
 
         window.open(url, "_blank"); // buka WA di tab baru
